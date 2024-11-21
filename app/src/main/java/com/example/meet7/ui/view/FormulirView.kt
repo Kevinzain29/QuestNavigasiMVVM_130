@@ -71,6 +71,17 @@ fun FormulirView(
             modifier = modifier.fillMaxWidth().padding(5.dp),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
         )
+        TextField(
+            value = alamat,
+            onValueChange = {alamat = it},
+            label = {
+                Text(text = "alamat")
+            },
+            placeholder = {
+                Text(text = "isi alamat anda")
+            },
+            modifier = modifier.fillMaxWidth().padding(5.dp)
+        )
 
     }
 }
