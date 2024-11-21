@@ -20,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Meet7Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Hello Android",
+                    NavigationControl(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
