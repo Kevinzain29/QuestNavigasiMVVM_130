@@ -82,6 +82,17 @@ fun FormulirView(
             },
             modifier = modifier.fillMaxWidth().padding(5.dp)
         )
-
+        TextField(
+            value = notelepon,
+            onValueChange = {notelepon = it},
+            label = {
+                Text(text = "notelepon")
+            },
+            placeholder = {
+                Text(text = "isi notelepon anda")
+            },
+            modifier = modifier.fillMaxWidth().padding(5.dp),
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+        )
     }
 }
