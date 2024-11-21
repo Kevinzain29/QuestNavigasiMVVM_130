@@ -94,5 +94,17 @@ fun FormulirView(
             modifier = modifier.fillMaxWidth().padding(5.dp),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
+        TextField(
+            value = nim,
+            onValueChange = {nim = it},
+            label = {
+                Text(text = "NIM")
+            },
+            placeholder = {
+                Text(text = "isi NIM anda")
+            },
+            modifier = modifier.fillMaxWidth().padding(5.dp),
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+        )
     }
 }
